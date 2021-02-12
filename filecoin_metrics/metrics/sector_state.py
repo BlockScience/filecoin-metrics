@@ -118,3 +118,42 @@ def upcoming_sector_expiration_by_week(connection) -> pd.Series:
     s = df.sector_count
 
     return s
+
+def renewal_count_per_epoch(connection) -> pd.Series:
+
+    QUERY = """
+            select 
+        to_timestamp(height_to_unix(mse.height)) as timestamp,
+        count(*) renewal_count
+        from miner_sector_events mse 
+        where mse."event" = 'SECTOR_EXTENDED'
+        group by mse.height
+        """
+
+    df = (pd.read_sql(QUERY, connection)
+          .set_index('timestamp')
+          )
+
+    s = df.renewal_count
+
+    return s
+
+
+def declare_fault_weekly(connection) -> pd.Series:
+    QUERY = """
+    select 
+    COUNT(*) as declare_fault_count,
+    date_trunc('week', to_timestamp(height_to_unix(pm.height))) as timestamp 
+    from parsed_messages pm 
+    where pm."method" = 'DeclareFaults'
+    group by timestamp
+    order by timestamp
+        """
+
+    df = (pd.read_sql(QUERY, connection)
+          .set_index('timestamp')
+          )
+
+    s = df.declare_fault_count
+
+    return s
