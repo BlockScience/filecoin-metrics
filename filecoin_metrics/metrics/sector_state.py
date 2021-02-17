@@ -90,8 +90,7 @@ def declare_fault_count_per_miner(connection: Engine) -> pd.Series:
     return s
 
 
-
-def upcoming_sector_expiration_by_week(connection) -> pd.Series:
+def sector_activation_and_expiration_by_week(connection) -> pd.Series:
     QUERY = """
         with sector_states as ( 
             select 
@@ -104,20 +103,24 @@ def upcoming_sector_expiration_by_week(connection) -> pd.Series:
         )
         select 
         count(*) as sector_count,
-        date_trunc('WEEK', to_timestamp(height_to_unix(ss.expiration_epoch))) as expiration_epoch
+        date_trunc('WEEK', to_timestamp(height_to_unix(ss.activation_epoch))) as activation_week,
+        date_trunc('WEEK', to_timestamp(height_to_unix(ss.expiration_epoch))) as expiration_week
         from sector_states ss
         where ss.max_height = ss.height
-        group by expiration_epoch
+        group by activation_week, expiration_week
+        order by activation_week, expiration_week
         """
 
     df = (pd.read_sql(QUERY, connection)
-          .assign(expiration_epoch=lambda df: pd.to_datetime(df.expiration_epoch, unit='s'))
-          .set_index('expiration_epoch')
+          .assign(expiration_week=lambda df: pd.to_datetime(df.expiration_week, unit='s'))
+          .assign(activation_week=lambda df: pd.to_datetime(df.activation_week, unit='s'))
+          .set_index(['activation_week', 'expiration_week'])
           )
 
     s = df.sector_count
 
     return s
+
 
 def renewal_count_per_epoch(connection) -> pd.Series:
 
