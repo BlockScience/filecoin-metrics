@@ -1,7 +1,7 @@
 # Make sure that we have a clean output/ sub folder
 rm -rf output/
 
-INPUT_NOTEBOOK=sector_state_before_upgrade.ipynb
+INPUT_NOTEBOOK=sector_state_before_upgrade_miners.ipynb
 OUTPUT_DIR=output
 
 # Export to markdown
