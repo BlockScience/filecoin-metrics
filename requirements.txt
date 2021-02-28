@@ -6,3 +6,5 @@ ipython-autotime
 plotly
 numpy
 matplotlib
+notebook
+nbconvert
