@@ -19,4 +19,4 @@ jobs:
           git config --global user.email 'emanuel@block.science'
           git add *.pdf
           git commit -m "Add converted notebooks"
-          git push origin master
+          git push origin main
