@@ -4,8 +4,8 @@ author: "emanuel@block.science"
 
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "../../Dockerfile"
 
 branding:
-  icon: "mic"
-  color: "purple"
+  icon: "server"
+  color: "blue"

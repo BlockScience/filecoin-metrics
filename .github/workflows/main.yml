@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Run Convert Action
       - uses: ./.github/action
       - name: Commit PDFs
         run: |
