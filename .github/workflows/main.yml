@@ -1,5 +1,8 @@
 name: "Workflow to Convert Jupyter Noteboks"
 on:
+  push:
+    branches:
+      - "main"
   schedule:
     - cron: "59 23 * * 6"
 
