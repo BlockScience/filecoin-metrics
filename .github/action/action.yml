@@ -1,5 +1,5 @@
 name: "Converts Jupyter Noteboks"
-description: "Converts Jupyter Noteboks into PDFs every Friday 23h59 UTC"
+description: "Converts Jupyter Noteboks into PDFs and HTMLs every Friday 23h59 UTC"
 author: "emanuel@block.science"
 
 runs:

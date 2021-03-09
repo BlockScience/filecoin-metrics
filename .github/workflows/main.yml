@@ -13,10 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/action
-      - name: Commit PDFs
+      - name: Commit PDFs and HTMLs
         run: |
           git config --global user.name 'Convert Action'
           git config --global user.email 'emanuel@block.science'
           git add *.pdf
+          git add *.html
           git commit -m "Add converted notebooks"
           git push origin main
