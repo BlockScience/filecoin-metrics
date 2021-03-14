@@ -21,9 +21,11 @@ jobs:
           git add *.html
           git commit -m "Add converted notebooks"
           git push origin main
+          echo "Pushed to main!"
           git fetch
           git checkout gh-pages
           git checkout main notebooks/output/html/*.html
           git mv notebooks/output/html/*.html notebooks/
           git commit -m "Add HTML notebooks"
           git push --set-upstream origin gh-pages
+          echo "Finished!"
