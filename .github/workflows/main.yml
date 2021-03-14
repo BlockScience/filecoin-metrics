@@ -25,7 +25,7 @@ jobs:
           git fetch
           git checkout gh-pages
           git checkout main notebooks/output/html/*.html
-          git mv notebooks/output/html/*.html notebooks/
+          git mv --force notebooks/output/html/*.html notebooks/
           git commit -m "Add HTML notebooks"
           git push --set-upstream origin gh-pages
           echo "Finished!"
