@@ -1,3 +1,3 @@
 # Filecoin Metrics Website
 
-Available [here](https://blockscience.github.io/filecoin-metrics-website/).
+Available [here](https://blockscience.github.io/filecoin-metrics).
