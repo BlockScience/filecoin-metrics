@@ -17,12 +17,11 @@ jobs:
         run: |
           git config --global user.name 'Convert Action'
           git config --global user.email 'emanuel@block.science'
-          git fetch
           git add *.pdf
-          git commit -m "Add converted notebooks in PDF format"
           git add *.html
-          git commit -m "Add converted notebooks in HTML format"
+          git commit -m "Add converted notebooks"
           git push origin main
+          git fetch
           git checkout gh-pages
           git checkout main notebooks/output/html/*.html
           git mv notebooks/output/html/*.html notebooks/
