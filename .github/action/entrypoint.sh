@@ -12,5 +12,8 @@ pip3 install --user --no-cache-dir -r requirements.txt
 
 cd notebooks
 
-jupyter nbconvert --to pdf --execute *.ipynb --output-dir output/
-jupyter nbconvert --to html --execute *.ipynb --output-dir output/
+mkdir -p output/pdf
+mkdir -p output/html
+
+jupyter nbconvert --to html --execute *.ipynb --output-dir output/html
+jupyter nbconvert --to pdf --execute *.ipynb --output-dir output/pdf
