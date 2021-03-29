@@ -9,6 +9,7 @@ apt-get update && apt-get install -y pandoc \
     texlive-generic-recommended inkscape build-essential
 
 pip3 install --user --no-cache-dir -r requirements.txt
+pip3 install --user --no-cache-dir fbprophet
 
 cd notebooks
 

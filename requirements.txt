@@ -9,4 +9,3 @@ pystan
 matplotlib
 notebook
 nbconvert
-fbprophet
