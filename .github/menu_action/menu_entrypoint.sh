@@ -9,3 +9,5 @@ cp assets/script/write_links.py .
 chmod +x write_links.py
 
 ./write_links.py
+
+rm write_links.py
