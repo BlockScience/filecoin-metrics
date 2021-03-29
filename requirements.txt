@@ -5,8 +5,8 @@ holoviews
 ipython-autotime
 plotly
 numpy
+pystan
 matplotlib
 notebook
 nbconvert
 fbprophet
-pystan
