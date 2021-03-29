@@ -10,3 +10,4 @@ notebook
 nbconvert
 convertdate
 Cython
+LunarCalendar
