@@ -11,3 +11,4 @@ nbconvert
 convertdate
 Cython
 LunarCalendar
+cadCAD-tools
