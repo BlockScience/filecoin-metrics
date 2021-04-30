@@ -12,3 +12,5 @@ convertdate
 Cython
 LunarCalendar
 cadCAD-tools
+scipy
+scikit-learn
