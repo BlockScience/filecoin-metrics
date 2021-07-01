@@ -17,5 +17,5 @@ cd notebooks
 mkdir -p output/pdf
 mkdir -p output/html
 
-jupyter nbconvert --to html --execute *.ipynb --output-dir output/html
-jupyter nbconvert --to pdf --execute *.ipynb --output-dir output/pdf
+jupyter nbconvert --to html --ExecutePreprocessor.kernel_name=python3 --execute *.ipynb --output-dir output/html
+jupyter nbconvert --to pdf --ExecutePreprocessor.kernel_name=python3 --execute *.ipynb --output-dir output/pdf
