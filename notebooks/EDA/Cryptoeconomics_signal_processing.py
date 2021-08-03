@@ -18,7 +18,7 @@ def time_analysis(df,timestamp_column):
     '''
     
     df['timestampDiff'] = df[timestamp_column].diff()
-    df['timestampDiff'].fillna(0,inplace=True)
+    df.fillna(0,inplace=True)
     
     # convert from minutes to hours
     data = df.timestampDiff.apply(lambda x: x/3600)

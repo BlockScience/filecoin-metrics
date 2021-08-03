@@ -1,1 +1,1 @@
-postgresql://blksci-danilo:qHqI557jtN3mSJVRn3kkT8sc@replica-mainnet-fildev-network-protocol-5870.a.timescaledb.io:13573/sentinel-analysis
+postgres://blockscience:whvcon90e55nm3vp@read.lilium.sh:13573/mainnet?sslmode=require
