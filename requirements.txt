@@ -1,6 +1,4 @@
 pandas
-sqlalchemy
-psycopg2-binary
 holoviews
 ipython-autotime
 plotly
@@ -14,3 +12,5 @@ LunarCalendar
 cadCAD-tools
 scipy
 scikit-learn
+psycopg2
+sqlalchemy
