@@ -130,8 +130,5 @@ dmypy.json
 
 .vscode
 
-# connection string
-sentinel_conn_string_andrew.txt
-
 # large data files
 *.csv
