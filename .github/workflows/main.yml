@@ -5,6 +5,12 @@ on:
       - "main"
   schedule:
     - cron: "59 23 * * 6"
+  workflow_dispatch:
+    inputs:
+      msg:
+        description: "message"
+        required: false
+        default: "Forcing through workflow_dispatch"
 
 jobs:
   build:
@@ -15,6 +21,7 @@ jobs:
       - uses: ./.github/action
       - name: Commit HTMLs
         run: |
+          echo "${{ github.event.inputs.msg }}!"
           git config --global user.name 'Convert Action'
           git config --global user.email 'emanuel@block.science'
           git add *.html
