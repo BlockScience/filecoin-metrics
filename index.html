@@ -30,6 +30,7 @@
                 <section id="banner">
                     <div class="content">
                         <header>
+                    		<img src="images/Filecoin-BlockScience-Synergy.png" alt="BlockScience Filecoin Synergy" width="500" height="300"/>
                             <h1>Filecoin Metrics</h1>
                             <p>an overview of system health and performance</p>
                         </header>
@@ -77,19 +78,21 @@
 						    <p>The goal of this notebook is to explore the impact of the sector expiration wave in April/May 2021, especially wrt V1 proofs.</p>
 						<h2>Gas EDA V1</h2>
 							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>In this notebook we perform Exploratory Data Analysis (EDA) on FIL's gas fee mechanism. The goal is to observe the gas fee as a signal and attempt to understand what may be driving it. We perform Fourier Transformations on the minute aggregated `derived_gas_outputs` data.</p>
+						    <p>In this notebook we perform Exploratory Data Analysis (EDA) on FIL's gas fee mechanism. The goal is to observe the gas fee as a signal and attempt to understand what may be driving it. We perform <a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier Transformations</a> on the minute aggregated <code>derived_gas_outputs</code> data.</p>
 						<h2>Gas EDA V2</h2>
 							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>Builds on Gas EDA V1 and performs Fourier Transformations on`message_gas_economy` data. Additionally, `chain_rewards`, `chain_powers`, and `chain_economics` event level data is analyzed and Granger Causality is performed on the signals.</p>
+						    <p>Builds on Gas EDA V1 and performs Fourier Transformations on <code>message_gas_economy</code> data. Additionally, <code>chain_rewards</code>, <code>chain_powers</code>, and <code>chain_economics</code> event level data is analyzed and Granger Causality is performed on the signals.</p>
 						<h2>Gas EDA V3</h2>
 							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>Builds on the previous two notebooks second aggregated `derived_gas_outputs` data was pulled for July 2021 as well as the actor types and methods.We created a <a href="https://docs.google.com/spreadsheets/d/13sfwHtT1YO94a37JmA956a1HcFJ_FtMQegu1oTE3WaQ/edit#gid=0">mapping</a> of actor_types and methods (as methods are not unique across actor types) downloaded all July data per actor_type and created histograms of `gas_used` over method type. We then combined the `derived_gas_outputs`, `chain_rewards`, `chain_powers`, and `chain_economics` tables and performed VAR and Granger Causality Analysis.</p>
+						    <p>Builds on the previous two notebooks second aggregated <code>derived_gas_outputs</code> data was pulled for July 2021 as well as the actor types and methods.We created a <a href="https://docs.google.com/spreadsheets/d/13sfwHtT1YO94a37JmA956a1HcFJ_FtMQegu1oTE3WaQ/edit#gid=0">mapping</a> of actor_types and methods (as methods are not unique across actor types) downloaded all July data per <code>actor_type</code> and created histograms of <code>gas_used</code> over method type. We then combined the <code>derived_gas_outputs</code>, <code>chain_rewards</code>, <code>chain_powers</code>, and <code>chain_economics</code> tables and performed <a href="https://en.wikipedia.org/wiki/Vector_autoregression">VAR</a> and <a href="https://en.wikipedia.org/wiki/Granger_causality">Granger Causality Analysis</a>.</p>
 						<h2>Future Work</h2>
-							<p>As we develop more models, metrics, and dashboards we will add them to this page. This will provide a growing body of knowledge and key metrics to inform [Filecoin Improvement Proposals](https://github.com/filecoin-project/FIPs).</p>
+							<p>As we develop more models, metrics, and dashboards we will add them to this page. This will provide a growing body of knowledge and key metrics to inform <a href="https://github.com/filecoin-project/FIPs">Filecoin Improvement Proposals</a>.</p>
                     </div>
+					<!-- Standard Image Slot 
                     <span class="image object">
-                        <img src="images/Filecoin-BlockScience-Synergy.png" alt="BlockScience Filecoin Synergy" />
+						<img src=""/>
                     </span>
+					-->
                 </section>
             </div>
         </div>
