@@ -31,16 +31,64 @@
                     <div class="content">
                         <header>
                             <h1>Filecoin Metrics</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>an overview of system health and performance</p>
                         </header>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis neque posuere,
-                            eleifend purus sit amet, mollis tortor. Phasellus in leo tellus.
-                            Ut pretium lectus sit amet eleifend bibendum. Nunc porttitor tortor a tempus sollicitudin.
-                            Curabitur quis tortor sit amet ligula hendrerit faucibus quis at nibh.
-                            Phasellus tellus nibh, rhoncus placerat mauris ut, sagittis maximus justo. </p>
+						<h2>About</h2>
+							<p>Data driven governance requires data.</p>
+							<p>Deriving insights from data requires maps and models.</p>
+							<p>This site contains a series of notebooks that pull live data from the Filecoin network, run it through models, and then visualize key metrics across a set of dashboards.</p>
+							<p>This can provide insights to guide FIP discussions and stakeholder decisions to improve the Filecoin network.</p>
+						<h2>Sector State Metrics Dashboard</h2>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_state.html">Notebook</a></p>
+						    <p>The Sector State Metrics Dashboard shows missing Proofs of Space Time (PoST) over time. This is important because missing PoST implies unreliable storage services. By monitoring the % of PoST faults we can verify that:</p>
+							<ul>
+								<li>the protocol is functioning as intended and terminating faulty sectors</li>
+								<li>the % of sector faults is staying within an acceptable range</li>
+							</ul>
+						<h2>Sector Life Metrics Dashboard</h2>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_life.html">Notebook</a></p>
+						    <p>This dashboard can show us the lifetime of sectors.</p>
+							<p>This is important to:</p>
+							<ul>
+								<li>anticipate when sectors will expire</li>
+								<li>compare the ratio of sector expirations vs activations</li>
+								<li>understand the average lifetime of sectors</li>
+							</ul>
+							<p>When sectors expire miners can either reinvest the FIL and equipment into a new sector, or sell them on the market.</p>
+							<ul>
+								<li>If there are more sector activations than expirations that puts positive price pressure on FIL and mining equipment.</li>
+								<li>If there are more expirations than activations that might show that miners find storage provision to be unprofitable and are waiting for market conditions to change or dumping capital (FIL and equipment) on the market.</li>
+							</ul>
+						<h2>Sector State Miners Dashboard</h2>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_state_miners.html">Notebook</a></p>
+						    <p>This dashboard provides similar metrics as the Sector State and the Sector Life dashboards, but grouping by miner pools.</p>
+						<h2>Baseline Crossing</h2>
+							<img src="https://i.imgur.com/vlEOdsl.png"/>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/baseline_crossing.html">Notebook</a></p>
+						    <p>With <a href="https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f">the Baseline Target Threshold passed</a> Filecoin block rewards are now primarily distributed according to the <a href="https://medium.com/block-science/baseline-minting-incentives-743b229b9b80">Baseline Minting policy</a>. This provides ongoing incentives to maintain a baseline of storage capacity on the Filecoin network. There are two articles exploring what crossing the Baseline Target Threshold means and how Filecoin block rewards work:</p>
+							<ul>
+								<li><a href="https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f">Sustainability Goal Achieved: Filecoin Network Crosses Baseline Target | Entering A New Phase of Operation</a></li>
+								<li><a href="https://medium.com/block-science/baseline-minting-incentives-743b229b9b80">Baseline Minting Incentives | Exploring Filecoin’s Block Reward Policies</a></li>
+							</ul>
+							<p>This notebook continues to track network power wrt the baseline minting threshold for ongoing monitoring.</p>
+						<h2></h2>
+							<p><a href="https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0014.md">FIP</a></p>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
+						    <p>The goal of this notebook is to explore the impact of the sector expiration wave in April/May 2021, especially wrt V1 proofs.</p>
+						<h2>Gas EDA V1</h2>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
+						    <p>In this notebook we perform Exploratory Data Analysis (EDA) on FIL's gas fee mechanism. The goal is to observe the gas fee as a signal and attempt to understand what may be driving it. We perform Fourier Transformations on the minute aggregated `derived_gas_outputs` data.</p>
+						<h2>Gas EDA V2</h2>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
+						    <p>Builds on Gas EDA V1 and performs Fourier Transformations on`message_gas_economy` data. Additionally, `chain_rewards`, `chain_powers`, and `chain_economics` event level data is analyzed and Granger Causality is performed on the signals.</p>
+						<h2>Gas EDA V3</h2>
+							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
+						    <p>Builds on the previous two notebooks second aggregated `derived_gas_outputs` data was pulled for July 2021 as well as the actor types and methods.We created a <a href="https://docs.google.com/spreadsheets/d/13sfwHtT1YO94a37JmA956a1HcFJ_FtMQegu1oTE3WaQ/edit#gid=0">mapping</a> of actor_types and methods (as methods are not unique across actor types) downloaded all July data per actor_type and created histograms of `gas_used` over method type. We then combined the `derived_gas_outputs`, `chain_rewards`, `chain_powers`, and `chain_economics` tables and performed VAR and Granger Causality Analysis.</p>
+						<h2>Future Work</h2>
+							<p>As we develop more models, metrics, and dashboards we will add them to this page. This will provide a growing body of knowledge and key metrics to inform [Filecoin Improvement Proposals](https://github.com/filecoin-project/FIPs).</p>
                     </div>
                     <span class="image object">
-                        <img src="images/bs.jpeg" alt="BlockScience Logo" />
+                        <img src="images/Filecoin-BlockScience-Synergy.png" alt="BlockScience Filecoin Synergy" />
                     </span>
                 </section>
             </div>
