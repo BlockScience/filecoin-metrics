@@ -8,8 +8,7 @@ apt-get update && apt-get install -y inkscape build-essential \
     python-dev python3-dev libpq-dev
 
 pip3 install --user --no-cache-dir -r requirements.txt
-pip3 install --user --no-cache-dir pystan
-pip3 install --user --no-cache-dir prophet
+pip3 install --user --no-cache-dir pystan && pip3 install --user --no-cache-dir prophet
 
 cd notebooks
 
