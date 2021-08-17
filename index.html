@@ -23,6 +23,8 @@
                     <ul class="icons">
                         <li><a href="https://github.com/BlockScience" class="icon brands fa-github"><span
                                     class="label">Github</span></a></li>
+                        <li><a href="https://medium.com/block-science" class="icon brands fa-medium-m"><span
+                                    class="label">Medium</span></a></li>
                     </ul>
                 </header>
 
@@ -30,69 +32,189 @@
                 <section id="banner">
                     <div class="content">
                         <header>
-                    		<img src="images/Filecoin-BlockScience-Synergy.png" alt="BlockScience Filecoin Synergy" width="500" height="300"/>
                             <h1>Filecoin Metrics</h1>
-                            <p>an overview of system health and performance</p>
+                            <p>An overview of system health and performance</p>
                         </header>
-						<h2>About</h2>
-							<p>Data driven governance requires data.</p>
-							<p>Deriving insights from data requires maps and models.</p>
-							<p>This site contains a series of notebooks that pull live data from the Filecoin network, run it through models, and then visualize key metrics across a set of dashboards.</p>
-							<p>This can provide insights to guide FIP discussions and stakeholder decisions to improve the Filecoin network.</p>
-						<h2>Sector State Metrics Dashboard</h2>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_state.html">Notebook</a></p>
-						    <p>The Sector State Metrics Dashboard shows missing Proofs of Space Time (PoST) over time. This is important because missing PoST implies unreliable storage services. By monitoring the % of PoST faults we can verify that:</p>
-							<ul>
-								<li>the protocol is functioning as intended and terminating faulty sectors</li>
-								<li>the % of sector faults is staying within an acceptable range</li>
-							</ul>
-						<h2>Sector Life Metrics Dashboard</h2>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_life.html">Notebook</a></p>
-						    <p>This dashboard can show us the lifetime of sectors.</p>
-							<p>This is important to:</p>
-							<ul>
-								<li>anticipate when sectors will expire</li>
-								<li>compare the ratio of sector expirations vs activations</li>
-								<li>understand the average lifetime of sectors</li>
-							</ul>
-							<p>When sectors expire miners can either reinvest the FIL and equipment into a new sector, or sell them on the market.</p>
-							<ul>
-								<li>If there are more sector activations than expirations that puts positive price pressure on FIL and mining equipment.</li>
-								<li>If there are more expirations than activations that might show that miners find storage provision to be unprofitable and are waiting for market conditions to change or dumping capital (FIL and equipment) on the market.</li>
-							</ul>
-						<h2>Sector State Miners Dashboard</h2>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_state_miners.html">Notebook</a></p>
-						    <p>This dashboard provides similar metrics as the Sector State and the Sector Life dashboards, but grouping by miner pools.</p>
-						<h2>Baseline Crossing</h2>
-							<img src="https://i.imgur.com/vlEOdsl.png"/>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/baseline_crossing.html">Notebook</a></p>
-						    <p>With <a href="https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f">the Baseline Target Threshold passed</a> Filecoin block rewards are now primarily distributed according to the <a href="https://medium.com/block-science/baseline-minting-incentives-743b229b9b80">Baseline Minting policy</a>. This provides ongoing incentives to maintain a baseline of storage capacity on the Filecoin network. There are two articles exploring what crossing the Baseline Target Threshold means and how Filecoin block rewards work:</p>
-							<ul>
-								<li><a href="https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f">Sustainability Goal Achieved: Filecoin Network Crosses Baseline Target | Entering A New Phase of Operation</a></li>
-								<li><a href="https://medium.com/block-science/baseline-minting-incentives-743b229b9b80">Baseline Minting Incentives | Exploring Filecoin’s Block Reward Policies</a></li>
-							</ul>
-							<p>This notebook continues to track network power wrt the baseline minting threshold for ongoing monitoring.</p>
-						<h2>FIP 014</h2>
-							<p><a href="https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0014.md">FIP</a></p>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>The goal of this notebook is to explore the impact of the sector expiration wave in April/May 2021, especially wrt V1 proofs.</p>
-						<h2>Gas EDA V1</h2>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>In this notebook we perform Exploratory Data Analysis (EDA) on FIL's gas fee mechanism. The goal is to observe the gas fee as a signal and attempt to understand what may be driving it. We perform <a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier Transformations</a> on the minute aggregated <code>derived_gas_outputs</code> data.</p>
-						<h2>Gas EDA V2</h2>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>Builds on Gas EDA V1 and performs Fourier Transformations on <code>message_gas_economy</code> data. Additionally, <code>chain_rewards</code>, <code>chain_powers</code>, and <code>chain_economics</code> event level data is analyzed and Granger Causality is performed on the signals.</p>
-						<h2>Gas EDA V3</h2>
-							<p><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html">Notebook</a></p>
-						    <p>Builds on the previous two notebooks second aggregated <code>derived_gas_outputs</code> data was pulled for July 2021 as well as the actor types and methods.We created a <a href="https://docs.google.com/spreadsheets/d/13sfwHtT1YO94a37JmA956a1HcFJ_FtMQegu1oTE3WaQ/edit#gid=0">mapping</a> of actor_types and methods (as methods are not unique across actor types) downloaded all July data per <code>actor_type</code> and created histograms of <code>gas_used</code> over method type. We then combined the <code>derived_gas_outputs</code>, <code>chain_rewards</code>, <code>chain_powers</code>, and <code>chain_economics</code> tables and performed <a href="https://en.wikipedia.org/wiki/Vector_autoregression">VAR</a> and <a href="https://en.wikipedia.org/wiki/Granger_causality">Granger Causality Analysis</a>.</p>
-						<h2>Future Work</h2>
-							<p>As we develop more models, metrics, and dashboards we will add them to this page. This will provide a growing body of knowledge and key metrics to inform <a href="https://github.com/filecoin-project/FIPs">Filecoin Improvement Proposals</a>.</p>
+                        <p>Data driven governance requires data. Deriving insights from data requires maps and models.
+                            This site contains a series of notebooks that pull live data from the Filecoin network,
+                            run it through models, and then visualize key metrics across a set of dashboards.
+                            This can provide insights to guide FIP discussions and stakeholder decisions to improve the
+                            Filecoin network.
+                        </p>
+                        <p>As we develop more models, metrics, and dashboards we will add them to this page. This will
+                            provide a growing body of knowledge and key metrics to inform the <a
+                                href="https://github.com/filecoin-project/FIPs">Filecoin Improvement Proposals</a>.
+                        </p>
                     </div>
-					<!-- Standard Image Slot 
                     <span class="image object">
-						<img src=""/>
+                        <img src="images/Filecoin-BlockScience-Synergy.png" alt="BlockScience Filecoin Synergy" />
                     </span>
-					-->
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Static Notebooks</h2>
+                    </header>
+                    <div class="posts">
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_v1.html"
+                                class="image"><img src="images/s_v1.png" alt="Gas EDA V1" /></a>
+                            <h3>Gas EDA V1</h3>
+                            <p>In this notebook we perform Exploratory Data Analysis (EDA) on FIL's gas fee mechanism.
+                                The
+                                goal is to observe the gas fee as a signal and attempt to understand what may be driving
+                                it.
+                                We perform <a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier
+                                    Transformations</a> on the minute aggregated <code>derived_gas_outputs</code> data.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_v1.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_v2.html"
+                                class="image"><img src="images/s_v2.png" alt="Gas EDA V2" /></a>
+                            <h3>Gas EDA V2</h3>
+                            <p>Builds on Gas EDA V1 and performs Fourier Transformations on
+                                <code>message_gas_economy</code>
+                                data. Additionally, <code>chain_rewards</code>, <code>chain_powers</code>, and
+                                <code>chain_economics</code> event level data is analyzed and Granger Causality is
+                                performed
+                                on the signals.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_v2.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_v3.html"
+                                class="image"><img src="images/s_v3.png" alt="Gas EDA V3" /></a>
+                            <h3>Gas EDA V3</h3>
+                            <p>Builds on the previous two notebooks second aggregated <code>derived_gas_outputs</code>
+                                data
+                                was pulled for July 2021 as well as the actor types and methods.We created a <a
+                                    href="https://docs.google.com/spreadsheets/d/13sfwHtT1YO94a37JmA956a1HcFJ_FtMQegu1oTE3WaQ/edit#gid=0">mapping</a>
+                                of actor_types and methods (as methods are not unique across actor types) downloaded all
+                                July data per <code>actor_type</code> and created histograms of <code>gas_used</code>
+                                over
+                                method type. We then combined the <code>derived_gas_outputs</code>,
+                                <code>chain_rewards</code>, <code>chain_powers</code>, and <code>chain_economics</code>
+                                tables and performed <a
+                                    href="https://en.wikipedia.org/wiki/Vector_autoregression">VAR</a>
+                                and <a href="https://en.wikipedia.org/wiki/Granger_causality">Granger Causality
+                                    Analysis</a>.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_v3.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html"
+                                class="image"><img src="images/s_fip.png" alt="FIP 014" /></a>
+                            <h3>FIP 014</h3>
+                            <p>The goal of this notebook is to explore the impact of the sector expiration wave in
+                                April/May
+                                2021, especially wrt V1 proofs.</p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/fip_0014.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/baseline_crossing.html"
+                                class="image"><img src="images/s_base.png" alt="Baseline Crossing" /></a>
+                            <h3>Baseline Crossing</h3>
+                            <p>With <a
+                                    href="https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f">the
+                                    Baseline Target Threshold passed</a> Filecoin block rewards are now primarily
+                                distributed according to the <a
+                                    href="https://medium.com/block-science/baseline-minting-incentives-743b229b9b80">Baseline
+                                    Minting policy</a>. This provides ongoing incentives to maintain a baseline of
+                                storage
+                                capacity on the Filecoin network. There are two articles exploring what crossing the
+                                Baseline Target Threshold means and how Filecoin block rewards work:</p>
+                            <ul>
+                                <li><a
+                                        href="https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f">Sustainability
+                                        Goal Achieved: Filecoin Network Crosses Baseline Target | Entering A New Phase
+                                        of
+                                        Operation</a></li>
+                                <li><a href="https://medium.com/block-science/baseline-minting-incentives-743b229b9b80">Baseline
+                                        Minting Incentives | Exploring Filecoin’s Block Reward Policies</a></li>
+                            </ul>
+                            <p>This notebook continues to track network power wrt the baseline minting threshold for
+                                ongoing
+                                monitoring.</p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/baseline_crossing.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_stationarity.html"
+                                class="image"><img src="images/s_stationarity.png" alt="Gas EDA Stationarity" /></a>
+                            <h3>Gas EDA Stationarity</h3>
+                            <p>This notebook examines if Filecoin's base fee trends towards stationarity, as
+                                hypothesized by <a
+                                    href="https://ethereum.github.io/abm1559/notebooks/stationary1559.html">Dr. Barnabé
+                                    Monnot's work on EIP 1559</a>.</p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/gas_eda_stationarity.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Dynamic Notebooks</h2>
+                    </header>
+                    <div class="posts">
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_state.html"
+                                class="image"><img src="images/d_state.png" alt="Sector State" /></a>
+                            <h3>Sector State Metrics Dashboard</h3>
+                            <p>The Sector State Metrics Dashboard shows missing Proofs of Space Time (PoST) over time.
+                                This
+                                is important because missing PoST implies unreliable storage services. By monitoring the
+                                %
+                                of PoST faults we can verify that the protocol is functioning as intended and
+                                terminating faulty sectors
+                                and that the % of sector faults is staying within an acceptable range.</p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_state.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_life.html"
+                                class="image"><img src="images/d_life.png" alt="Sector Life" /></a>
+                            <h3>Sector Life Metrics Dashboard</h3>
+                            <p>This dashboard can show us the lifetime of sectors. This is important to anticipate when
+                                sectors will expire,
+                                to compare the ratio of sector expirations vs activations and to understand the average
+                                lifetime of sectors.
+                                When sectors expire miners can either reinvest the FIL and equipment into a new sector,
+                                or
+                                sell them on the market. If there are more sector activations than expirations that puts
+                                positive price pressure
+                                on FIL and mining equipment. If there are more expirations than activations that might
+                                show that miners find storage
+                                provision to be unprofitable and are waiting for market conditions to change or dumping
+                                capital (FIL and equipment) on the market.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://blockscience.github.io/filecoin-metrics/notebooks/sector_life.html"
+                                        class="button">Notebook</a></li>
+                            </ul>
+                        </article>
+                    </div>
                 </section>
             </div>
         </div>
@@ -105,19 +227,26 @@
                     <header class="major">
                         <h2>Notebooks</h2>
                     </header>
+                    <ul>
+                        <li>
+                            <span class="opener">Static Notebooks</span>
+                            <ul>
+                                <li><a href="notebooks/fip_0014.html">Fip 0014</a></li>
+                                <li><a href="notebooks/gas_eda_v1.html">Gas Eda V1</a></li>
+                                <li><a href="notebooks/gas_eda_v2.html">Gas Eda V2</a></li>
+                                <li><a href="notebooks/gas_eda_v3.html">Gas Eda V3</a></li>
+                                <li><a href="notebooks/baseline_crossing.html">Baseline Crossing</a></li>
+                                <li><a href="notebooks/gas_eda_stationarity.html">Gas Eda Stationarity</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
                     <!-- Do no change the following lines -->
                     <!-- The converted notebooks go here -->
-<ul>
-<li><a href="notebooks/gas_eda_v3.html">Gas Eda V3</a></li>
-<li><a href="notebooks/gas_eda_v2.html">Gas Eda V2</a></li>
-<li><a href="notebooks/sector_state.html">Sector State</a></li>
-<li><a href="notebooks/gas_eda_v1.html">Gas Eda V1</a></li>
-<li><a href="notebooks/sector_life.html">Sector Life</a></li>
-<li><a href="notebooks/sector_state_miners.html">Sector State Miners</a></li>
-<li><a href="notebooks/gas_eda_stationarity.html">Gas Eda Stationarity</a></li>
-<li><a href="notebooks/fip_0014.html">Fip 0014</a></li>
-<li><a href="notebooks/baseline_crossing.html">Baseline Crossing</a></li>
-</ul>
+                    <ul>
+                        <li><a href="notebooks/sector_state.html">Sector State</a></li>
+                        <li><a href="notebooks/sector_life.html">Sector Life</a></li>
+                    </ul>
                 </nav>
 
                 <!-- Section -->
@@ -127,7 +256,8 @@
                     </header>
                     <ul class="contact">
                         <li class="icon solid fa-globe-americas"><a
-                                href="https://block.science/contact">BlockScience</a></li>
+                                href="https://block.science/contact">BlockScience</a>
+                        </li>
                         <li class="icon solid fa-globe-americas"> <a href="https://filecoin.io/">Filecoin</a> </li>
                     </ul>
                 </section>
