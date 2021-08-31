@@ -130,3 +130,11 @@ def phase_shift_overlay(timestamps,signal1,signal2,signal1label,signal2label):
     ax2.legend(bbox_to_anchor=(1, .9), loc='upper right', ncol=1)
     plt.title('Fourier decomposed signals in Time Domain')
     plt.show()
+    
+def peak_normalization(array):
+    '''
+    '''
+    
+    normalized = array / np.max(array)
+    
+    return normalized
