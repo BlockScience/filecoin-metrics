@@ -1,68 +1,68 @@
 Actor_name,Derived_gas_ouputs_name,Actor_description,Method number,Method,Method_description,Reference
-Market,fil/4/storagemarket,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,2,AddBalance,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,3,WithdrawBalance,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,4,PublishStorageDeals,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,5,VerifyDealsForActivation,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,6,ActivateDeals,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,7,OnMinerSectorsTerminate,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,8,ComputeDataCommitment,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Market,fil/4/storagemarket,,9,CronTick,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
-Account,fil/4/account,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/account/account_actor.go
-Account,fil/4/account,,2,PubkeyAddress,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/account/account_actor.go
-Init,fil/4/init,,1,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/init/init_actor.go
-Init,fil/4/init,,2,Exec,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/init/init_actor.go
-Multisig,fil/4/multisig,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,2,Propose,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,3,Approve,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,4,Cancel,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,5,AddSigner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,6,RemoveSigner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,7,SwapSigner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,8,ChangeNumApprovalsThreshold,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Multisig,fil/4/multisig,,9,LockBalance,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/multisig/multisig_actor.go
-Paych,fil/4/paymentchannel,,,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/paych/paych_actor.go
-Paych,fil/4/paymentchannel,,2,UpdateChannelState,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/paych/paych_actor.go
-Paych,fil/4/paymentchannel,,3,Settle,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/paych/paych_actor.go
-Paych,fil/4/paymentchannel,,4,Collect,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/paych/paych_actor.go
-Miner,fil/4/storageminer,,,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,2,ControlAddresses,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,3,ChangeWorkerAddress,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,4,ChangePeerID,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,5,SubmitWindowedPoS,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,6,PreCommitSector,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,7,ProveCommitSector,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,8,ExtendSectorExpiration,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,9,TerminateSectors,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,10,DeclareFaults,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,11,DeclareFaultsRecovered,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,12,OnDeferredCronEvent,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,13,CheckSectorProven,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,14,ApplyRewards,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,15,ReportConsensusFault,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,16,WithdrawBalance,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,17,ConfirmSectorProofsValid,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,18,ChangeMultiaddrs,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,19,CompactPartitions,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,20,CompactSectorNumbers,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,21,ConfirmUpdateWorkerKey,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,22,RepayDebt,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,23,ChangeOwnerAddress,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,24,DisputeWindowedPoSt,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,25,PreCommitSectorBatch,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Miner,fil/4/storageminer,,26,ProveCommitAggregate,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/miner/miner_actor.go
-Power,fil/4/storagepower,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,2,CreateMiner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,3,UpdateClaimedPower,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,4,EnrollCronEvent,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,5,OnEpochTickEnd,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,6,UpdatePledgeTotal,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,7,deprecated,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,8,SubmitPoRepForBulkVerify,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Power,fil/4/storagepower,,9,CurrentTotalPower,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/power/power_actor.go
-Verified Registry,fil/4/verifiedregistry,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
-Verified Registry,fil/4/verifiedregistry,,2,AddVerifier,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
-Verified Registry,fil/4/verifiedregistry,,3,RemoveVerifier,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
-Verified Registry,fil/4/verifiedregistry,,4,AddVerifiedClient,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
-Verified Registry,fil/4/verifiedregistry,,5,UseBytes,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
-Verified Registry,fil/4/verifiedregistry,,6,RestoreBytes,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d994cd9105eefe2760a1846cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
+Market,fil/5/storagemarket,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,2,AddBalance,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,3,WithdrawBalance,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,5,PublishStorageDeals,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,5,VerifyDealsForActivation,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,6,ActivateDeals,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,7,OnMinerSectorsTerminate,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,8,ComputeDataCommitment,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Market,fil/5/storagemarket,,9,CronTick,,https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go
+Account,fil/5/account,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/account/account_actor.go
+Account,fil/5/account,,2,PubkeyAddress,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/account/account_actor.go
+Init,fil/5/init,,1,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/init/init_actor.go
+Init,fil/5/init,,2,Exec,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/init/init_actor.go
+Multisig,fil/5/multisig,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,2,Propose,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,3,Approve,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,5,Cancel,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,5,AddSigner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,6,RemoveSigner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,7,SwapSigner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,8,ChangeNumApprovalsThreshold,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Multisig,fil/5/multisig,,9,LockBalance,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/multisig/multisig_actor.go
+Paych,fil/5/paymentchannel,,,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/paych/paych_actor.go
+Paych,fil/5/paymentchannel,,2,UpdateChannelState,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/paych/paych_actor.go
+Paych,fil/5/paymentchannel,,3,Settle,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/paych/paych_actor.go
+Paych,fil/5/paymentchannel,,5,Collect,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/paych/paych_actor.go
+Miner,fil/5/storageminer,,,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,2,ControlAddresses,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,3,ChangeWorkerAddress,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,5,ChangePeerID,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,5,SubmitWindowedPoS,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,6,PreCommitSector,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,7,ProveCommitSector,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,8,ExtendSectorExpiration,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,9,TerminateSectors,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,10,DeclareFaults,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,11,DeclareFaultsRecovered,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,12,OnDeferredCronEvent,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,13,CheckSectorProven,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,15,ApplyRewards,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,15,ReportConsensusFault,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,16,WithdrawBalance,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,17,ConfirmSectorProofsValid,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,18,ChangeMultiaddrs,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,19,CompactPartitions,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,20,CompactSectorNumbers,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,21,ConfirmUpdateWorkerKey,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,22,RepayDebt,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,23,ChangeOwnerAddress,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,25,DisputeWindowedPoSt,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,25,PreCommitSectorBatch,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Miner,fil/5/storageminer,,26,ProveCommitAggregate,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/miner/miner_actor.go
+Power,fil/5/storagepower,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,2,CreateMiner,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,3,UpdateClaimedPower,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,5,EnrollCronEvent,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,5,OnEpochTickEnd,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,6,UpdatePledgeTotal,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,7,deprecated,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,8,SubmitPoRepForBulkVerify,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Power,fil/5/storagepower,,9,CurrentTotalPower,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/power/power_actor.go
+Verified Registry,fil/5/verifiedregistry,,0,Constructor,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
+Verified Registry,fil/5/verifiedregistry,,2,AddVerifier,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
+Verified Registry,fil/5/verifiedregistry,,3,RemoveVerifier,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
+Verified Registry,fil/5/verifiedregistry,,5,AddVerifiedClient,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
+Verified Registry,fil/5/verifiedregistry,,5,UseBytes,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
+Verified Registry,fil/5/verifiedregistry,,6,RestoreBytes,,https://github.com/filecoin-project/specs-actors/blob/ab02f795d995cd9105eefe2760a1856cfcfef192/actors/builtin/verifreg/verified_registry_actor.go
